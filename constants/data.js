@@ -8,44 +8,9 @@ const userData = {
   address: "Sénégal, Dakar, Sacré Coeur 3 Extension.",
   projects: [
     {
-      title: "Tail",
-      link: "https://tailwindmasterkit.com",
+      title: "Reconnaissance Vocale",
+      link: " ",
       imgUrl: "/tmk.jpg",
-    },
-    {
-      title: "PlaceholderTech",
-      link: "https://placeholdertech.in",
-      imgUrl: "/placeholdertech.png",
-    },
-    {
-      title: "Portfolio",
-      link: "https://manuarora.in",
-      imgUrl: "/portfolio.png",
-    },
-    {
-      title: "CovidRescue",
-      link: "https://covidrescue.co.in",
-      imgUrl: "/covidrescue.png",
-    },
-    {
-      title: "Algochurn",
-      link: "https://algochurn.com",
-      imgUrl: "/algochurn.png",
-    },
-    {
-      title: "Playground",
-      link: "https://play.placeholdertech.in",
-      imgUrl: "/playground.png",
-    },
-    {
-      title: "Feedmeback",
-      link: "https://feedmeback.vercel.app",
-      imgUrl: "/feedmeback.png",
-    },
-    {
-      title: "Devmedium",
-      link: "https://devmedium.vercel.app",
-      imgUrl: "/devmedium.png",
     },
   ],
   about: {
@@ -106,11 +71,11 @@ const userData = {
   resumeUrl:
     "https://drive.google.com/file/d/1GMwzcQsQTVcJLkyXV-cwejQibxxALxfq/view?usp=sharing",
   socialLinks: {
-    instagram: "https://instagram.com/maninthere",
+    instagram: "https://www.instagram.com/s_e_y_dii_n_a/",
     twitter: "https://twitter.com/mannupaaji",
     linkedin: "https://www.linkedin.com/in/seydina-o-ciss%C3%A9-11213913b/",
-    github: "https://github.com/manuarora700",
-    facebook: "https://facebook.com/",
+    github: "https://github.com/seydinah",
+    facebook: "https://web.facebook.com/anid.yes",
   },
 };
 

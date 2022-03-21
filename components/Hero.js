@@ -9,23 +9,23 @@ export default function Hero() {
     <div className="flex flex-row justify-center items-start overflow-hidden">
       {/* Text container */}
 
-      <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-30">
+      <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-50">
         
-            <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-700 dark:text-gray-200 my-20">
               Ingénieur SSI.
             </h1>
-            <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-700 dark:text-gray-200 my-20">
               Technicien Télécoms.
             </h1>
-            <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+            <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-20">
               Développeur.
             </h1>
        
       </div>
       {/* Image container */}
-      <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
-        <div className="w-3/4 ">
-          <img src={userData.avatarUrl} alt="seydi" className=" shadow" />
+      <div className="hidden lg:block rounded-full relative w-full md:w-1/2 -mr-40 mt-20">
+        <div className="w-3/4 rounded-xl" >
+          <img src={userData.avatarUrl} alt="seydi" className="shadow rounded-2xl hover:rounded-full" />
           <div className="flex flex-row justify-between mt-4">
             <div className="flex flex-row space-x-4">
               <svg

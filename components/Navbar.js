@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import userData from "@constants/data";
+import { Transition } from "@headlessui/react";
 
 export default function Navbar() {
   const router = useRouter();
@@ -14,10 +15,16 @@ export default function Navbar() {
     setMounted(true);
   }, []);
 
+  const [active, setActive] = useState(false);
+
+  const handleClick = () => {
+    setActive(!active);
+  };
+
   return (
-    <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
-      <div className="flex  md:flex-row justify-between items-center">
-        {/* Logo / Home / Text */}
+    <div className="max-w-6xl mx-auto px-4 py-10 md:py-20">
+      {/* <div className="flex md:flex-row justify-between items-center">
+        
 
         <div className="flex flex-col">
           <Link href="/">
@@ -26,7 +33,7 @@ export default function Navbar() {
                 {userData.name}
               </h1>
               <p className="text-base font-light text-gray-500 dark:text-gray-300">
-                {userData.designation}
+                {userData.motiv}
               </p>
             </a>
           </Link>
@@ -218,8 +225,10 @@ export default function Navbar() {
             )}
           </button>
         </div>
-      </div>
-      <div className="space-x-8 block md:hidden mt-4">
+      </div> */}
+
+
+      {/* <div className="space-x-8 block md:hidden mt-4">
         <Link href="/about">
           <a className="text-base font-normal text-gray-600 dark:text-gray-300">
             About
@@ -240,7 +249,98 @@ export default function Navbar() {
             Contact
           </a>
         </Link>
-      </div>
+      </div> */}
+      <>
+      <nav className='flex items-center rounded-full flex-wrap bg-gray-400 p-3 '>
+        <Link href='/'>
+          <a className='inline-flex items-center p-2 mr-4 '>
+            <span className='text-xl text-white font-bold uppercase tracking-wide'>
+              SeydiTech
+            </span>
+          </a>
+        </Link>
+        <button 
+          className=' inline-flex p-3 hover:bg-gray-900 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+          onClick={handleClick}>
+          <svg
+            className='w-6 h-6'
+            fill='none'
+            stroke='currentColor'
+            viewBox='0 0 24 24'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              strokeWidth={2}
+              d='M4 6h16M4 12h16M4 18h16'
+            />
+          </svg>
+        </button>
+        
+        <div
+          className={`${
+            active ? "" : "hidden"
+          }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+        >
+          <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
+            <Link href='/about'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white '>
+                About
+              </a>
+            </Link>
+            <Link href='/projects'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
+                Projets
+              </a>
+            </Link>
+            <Link href='/experience'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
+                Experience
+              </a>
+            </Link>
+            <Link href='/contact'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
+                Contact
+              </a>
+            </Link>
+          </div>
+        </div>
+        
+      </nav>
+      <button
+            aria-label="Toggle Dark Mode"
+            type="button"
+            className="w-10 h-10 p-3 rounded focus:outline-none"
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          >
+            {mounted && (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                stroke="currentColor"
+                className="w-4 h-4 text-yellow-500 dark:text-yellow-500"
+              >
+                {theme === "dark" ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                  />
+                )}
+              </svg>
+            )}
+          </button>
+    </>
     </div>
   );
 }

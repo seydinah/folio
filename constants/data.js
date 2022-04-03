@@ -1,6 +1,7 @@
 const userData = {
   githubUsername: "seydinah",
-  name: "Seydina Oumar Cissé",
+  name: "Seydiina",
+  motiv: "Beyond the limit",
   designation: "Cybersecurity Engineer, Front-End Developer",
   avatarUrl: "/seydi.jpg",
   email: "seydinah94@gmail.com",

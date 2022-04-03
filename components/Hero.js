@@ -23,9 +23,9 @@ export default function Hero() {
        
       </div>
       {/* Image container */}
-      <div className="hidden lg:block rounded-full relative w-full md:w-1/2 -mr-40 mt-20">
+      <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
         <div className="w-3/4 rounded-xl" >
-          <img src={userData.avatarUrl} alt="seydi" className="shadow rounded-2xl hover:rounded-full" />
+          <img src={userData.avatarUrl} alt="seydi" className="shadow rounded-2xl " />
           <div className="flex flex-row justify-between mt-4">
             <div className="flex flex-row space-x-4">
               <svg

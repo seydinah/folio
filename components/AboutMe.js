@@ -41,7 +41,7 @@ export default function AboutMe() {
                 >
                   mail
                 </a>{" "}
-                and I'll get back. I swear.
+                .
               </p>
             </div>
             <div className="mt-8">
@@ -49,7 +49,7 @@ export default function AboutMe() {
                 Job Opportunities
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                Check my{" "}
+                Verifiez mon{" "}
                 <a
                   href={userData.resumeUrl}
                   target="__blank"
@@ -57,7 +57,7 @@ export default function AboutMe() {
                 >
                   CV
                 </a>{" "}
-                and I'd love to work for you.
+                .
               </p>
             </div>
             {/* Social Links */}

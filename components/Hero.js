@@ -9,18 +9,10 @@ export default function Hero() {
     <div className="flex flex-row justify-center items-start overflow-hidden">
       {/* Text container */}
 
-      <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-50">
-        
+      <div className="w-full md:w-1/3 mx-auto text-center md:text-left lg:p-50">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-700 dark:text-gray-200 my-20">
-              Ingénieur SSI.
+              Seydina Cissé
             </h1>
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-700 dark:text-gray-200 my-20">
-              Technicien Télécoms.
-            </h1>
-            <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-20">
-              Développeur.
-            </h1>
-       
       </div>
       {/* Image container */}
       <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">

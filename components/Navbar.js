@@ -251,7 +251,7 @@ export default function Navbar() {
         </Link>
       </div> */}
       <>
-      <nav className='flex items-center rounded-full flex-wrap bg-gray-700 p-3 '>
+      <nav className='flex items-center rounded-2l flex-wrap bg-gray-700 p-3 '>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4 '>
             <span className='text-xl text-white font-bold uppercase tracking-wide'>
